@@ -1,0 +1,19 @@
+# Archivos temporales y de compilación de Unity
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Mm]emoryCaptures/
+
+# Archivos de VS Code
+.vscode/
+
+# Archivos de compilación para Android y iOS
+*.apk
+*.aab
+*.ipa
+
+# Archivos del sistema
+.DS_Store
