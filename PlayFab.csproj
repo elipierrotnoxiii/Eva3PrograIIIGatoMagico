@@ -10,10 +10,10 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{23CF5628-CB8E-E873-16BB-46AA2901A3D7}</ProjectGuid>
+    <ProjectGuid>{23F4B7B2-035F-D79B-17EF-F1F331A44474}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <AssemblyName>PlayFab</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BaseDirectory>.</BaseDirectory>
@@ -60,66 +60,107 @@
     <Analyzer Include="/Applications/Unity/Hub/Editor/2022.3.22f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextEventHandler.cs" />
-    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexShakeA.cs" />
-    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_ExampleScript_01.cs" />
-    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMPro_InstructionOverlay.cs" />
-    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexShakeB.cs" />
-    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/DropdownSample.cs" />
-    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexColorCycler.cs" />
-    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/EnvMapAnimator.cs" />
-    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextSelector_A.cs" />
-    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark01_UGUI.cs" />
-    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/SimpleScript.cs" />
-    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark04.cs" />
-    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/ChatController.cs" />
-    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/ObjectSpin.cs" />
-    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_PhoneNumberValidator.cs" />
-    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexJitter.cs" />
-    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_DigitValidator.cs" />
-    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_FrameRateCounter.cs" />
-    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TextConsoleSimulator.cs" />
-    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TeleType.cs" />
-    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextEventCheck.cs" />
-    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_UiFrameRateCounter.cs" />
-    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark01.cs" />
-    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TextMeshSpawner.cs" />
-    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexZoom.cs" />
-    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark02.cs" />
-    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextSelector_B.cs" />
-    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/SkewTextExample.cs" />
-    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/WarpTextExample.cs" />
-    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TextMeshProFloatingText.cs" />
-    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/ShaderPropAnimator.cs" />
-    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/CameraController.cs" />
-    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark03.cs" />
-    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextInfoDebugTool.cs" />
+    <Compile Include="Assets/PlayFabSDK/Data/PlayFabDataModels.cs" />
+    <Compile Include="Assets/PlayFabSDK/Shared/Internal/SingletonMonoBehaviour.cs" />
+    <Compile Include="Assets/PlayFabSDK/Progression/PlayFabProgressionInstanceAPI.cs" />
+    <Compile Include="Assets/PlayFabSDK/Client/PlayFabDeviceUtil.cs" />
+    <Compile Include="Assets/PlayFabSDK/Data/PlayFabDataAPI.cs" />
+    <Compile Include="Assets/PlayFabSDK/Profiles/PlayFabProfilesModels.cs" />
+    <Compile Include="Assets/PlayFabSDK/Addon/PlayFabAddonAPI.cs" />
+    <Compile Include="Assets/PlayFabSDK/Economy/PlayFabEconomyModels.cs" />
+    <Compile Include="Assets/PlayFabSDK/Profiles/PlayFabProfilesInstanceAPI.cs" />
+    <Compile Include="Assets/PlayFabSDK/Shared/Internal/Util.cs" />
+    <Compile Include="Assets/PlayFabSDK/Localization/PlayFabLocalizationInstanceAPI.cs" />
+    <Compile Include="Assets/PlayFabSDK/Server/PlayFabServerModels.cs" />
+    <Compile Include="Assets/PlayFabSDK/Insights/PlayFabInsightsInstanceAPI.cs" />
+    <Compile Include="Assets/PlayFabSDK/Server/PlayFabEvents.cs" />
+    <Compile Include="Assets/PlayFabSDK/Insights/PlayFabInsightsModels.cs" />
+    <Compile Include="Assets/PlayFabSDK/Shared/Internal/PlayFabErrors.cs" />
+    <Compile Include="Assets/PlayFabSDK/Economy/PlayFabEvents.cs" />
+    <Compile Include="Assets/PlayFabSDK/Shared/Public/PluginContractKey.cs" />
+    <Compile Include="Assets/PlayFabSDK/Shared/Internal/Log.cs" />
+    <Compile Include="Assets/PlayFabSDK/Client/PlayFabEvents.cs" />
+    <Compile Include="Assets/PlayFabSDK/Shared/Internal/ISerializer.cs" />
+    <Compile Include="Assets/PlayFabSDK/Matchmaker/PlayFabMatchmakerAPI.cs" />
+    <Compile Include="Assets/PlayFabSDK/Progression/PlayFabProgressionAPI.cs" />
+    <Compile Include="Assets/PlayFabSDK/Admin/PlayFabAdminInstanceAPI.cs" />
+    <Compile Include="Assets/PlayFabSDK/Client/PlayFabClientInstanceAPI.cs" />
+    <Compile Include="Assets/PlayFabSDK/Experimentation/PlayFabExperimentationModels.cs" />
+    <Compile Include="Assets/PlayFabSDK/Authentication/PlayFabAuthenticationInstanceAPI.cs" />
+    <Compile Include="Assets/PlayFabSDK/Groups/PlayFabEvents.cs" />
+    <Compile Include="Assets/PlayFabSDK/Events/PlayFabEventsModels.cs" />
+    <Compile Include="Assets/PlayFabSDK/Multiplayer/PlayFabMultiplayerAPI.cs" />
+    <Compile Include="Assets/PlayFabSDK/Shared/Public/PlayFabSettings.cs" />
+    <Compile Include="Assets/PlayFabSDK/CloudScript/PlayFabCloudScriptInstanceAPI.cs" />
+    <Compile Include="Assets/PlayFabSDK/Shared/Internal/PlayFabHttp/PlayFabWebRequest.cs" />
+    <Compile Include="Assets/PlayFabSDK/Authentication/PlayFabAuthenticationModels.cs" />
+    <Compile Include="Assets/PlayFabSDK/Addon/PlayFabEvents.cs" />
+    <Compile Include="Assets/PlayFabSDK/Economy/PlayFabEconomyInstanceAPI.cs" />
+    <Compile Include="Assets/PlayFabSDK/Insights/PlayFabInsightsAPI.cs" />
+    <Compile Include="Assets/PlayFabSDK/Shared/Public/PluginContract.cs" />
+    <Compile Include="Assets/PlayFabSDK/Shared/Internal/PlayFabHttp/PlayFabUnityHttp.cs" />
+    <Compile Include="Assets/PlayFabSDK/Progression/PlayFabProgressionModels.cs" />
+    <Compile Include="Assets/PlayFabSDK/Shared/Internal/PlayFabHttp/PlayFabWWW.cs" />
+    <Compile Include="Assets/PlayFabSDK/Shared/Models/PlayFabSharedSettings.cs" />
+    <Compile Include="Assets/PlayFabSDK/Admin/PlayFabAdminModels.cs" />
+    <Compile Include="Assets/PlayFabSDK/Experimentation/PlayFabEvents.cs" />
+    <Compile Include="Assets/PlayFabSDK/Shared/Public/PlayFabAuthenticationContext.cs" />
+    <Compile Include="Assets/PlayFabSDK/Shared/Internal/SimpleJson.cs" />
+    <Compile Include="Assets/PlayFabSDK/Shared/Public/PlayFabDataGatherer.cs" />
+    <Compile Include="Assets/PlayFabSDK/Groups/PlayFabGroupsAPI.cs" />
+    <Compile Include="Assets/PlayFabSDK/CloudScript/PlayFabCloudScriptAPI.cs" />
+    <Compile Include="Assets/PlayFabSDK/Admin/PlayFabAdminAPI.cs" />
+    <Compile Include="Assets/PlayFabSDK/Matchmaker/PlayFabEvents.cs" />
+    <Compile Include="Assets/PlayFabSDK/Addon/PlayFabAddonInstanceAPI.cs" />
+    <Compile Include="Assets/PlayFabSDK/Entity/ScreenTimeTracker.cs" />
+    <Compile Include="Assets/PlayFabSDK/Admin/PlayFabEvents.cs" />
+    <Compile Include="Assets/PlayFabSDK/Economy/PlayFabEconomyAPI.cs" />
+    <Compile Include="Assets/PlayFabSDK/Profiles/PlayFabEvents.cs" />
+    <Compile Include="Assets/PlayFabSDK/Shared/Public/PluginManager.cs" />
+    <Compile Include="Assets/PlayFabSDK/Data/PlayFabDataInstanceAPI.cs" />
+    <Compile Include="Assets/PlayFabSDK/Insights/PlayFabEvents.cs" />
+    <Compile Include="Assets/PlayFabSDK/Localization/PlayFabEvents.cs" />
+    <Compile Include="Assets/PlayFabSDK/Localization/PlayFabLocalizationModels.cs" />
+    <Compile Include="Assets/PlayFabSDK/Experimentation/PlayFabExperimentationInstanceAPI.cs" />
+    <Compile Include="Assets/PlayFabSDK/Addon/PlayFabAddonModels.cs" />
+    <Compile Include="Assets/PlayFabSDK/Multiplayer/PlayFabMultiplayerInstanceAPI.cs" />
+    <Compile Include="Assets/PlayFabSDK/Multiplayer/PlayFabMultiplayerModels.cs" />
+    <Compile Include="Assets/PlayFabSDK/Shared/Public/PlayFabEvents.cs" />
+    <Compile Include="Assets/PlayFabSDK/Shared/Internal/PlayFabHttp/PlayFabHTTP.cs" />
+    <Compile Include="Assets/PlayFabSDK/Events/PlayFabEventsAPI.cs" />
+    <Compile Include="Assets/PlayFabSDK/Experimentation/PlayFabExperimentationAPI.cs" />
+    <Compile Include="Assets/PlayFabSDK/Server/PlayFabServerAPI.cs" />
+    <Compile Include="Assets/PlayFabSDK/Shared/Internal/PlayFabHttp/IPlayFabHttp.cs" />
+    <Compile Include="Assets/PlayFabSDK/Authentication/PlayFabEvents.cs" />
+    <Compile Include="Assets/PlayFabSDK/Shared/Models/SharedModels.cs" />
+    <Compile Include="Assets/PlayFabSDK/Shared/Public/PlayFabLogger.cs" />
+    <Compile Include="Assets/PlayFabSDK/Groups/PlayFabGroupsInstanceAPI.cs" />
+    <Compile Include="Assets/PlayFabSDK/Events/PlayFabEvents.cs" />
+    <Compile Include="Assets/PlayFabSDK/Matchmaker/PlayFabMatchmakerModels.cs" />
+    <Compile Include="Assets/PlayFabSDK/Client/PlayFabClientModels.cs" />
+    <Compile Include="Assets/PlayFabSDK/Shared/Public/ISerializerPlugin.cs" />
+    <Compile Include="Assets/PlayFabSDK/Events/PlayFabEventsInstanceAPI.cs" />
+    <Compile Include="Assets/PlayFabSDK/Shared/Internal/wsaReflectionExtensions.cs" />
+    <Compile Include="Assets/PlayFabSDK/Server/PlayFabServerInstanceAPI.cs" />
+    <Compile Include="Assets/PlayFabSDK/Client/PlayFabClientAPI.cs" />
+    <Compile Include="Assets/PlayFabSDK/CloudScript/PlayFabEvents.cs" />
+    <Compile Include="Assets/PlayFabSDK/CloudScript/PlayFabCloudScriptModels.cs" />
+    <Compile Include="Assets/PlayFabSDK/Localization/PlayFabLocalizationAPI.cs" />
+    <Compile Include="Assets/PlayFabSDK/Matchmaker/PlayFabMatchmakerInstanceAPI.cs" />
+    <Compile Include="Assets/PlayFabSDK/Data/PlayFabEvents.cs" />
+    <Compile Include="Assets/PlayFabSDK/Shared/Internal/PlayFabHttp/GzipDownloadHandler.cs" />
+    <Compile Include="Assets/PlayFabSDK/Multiplayer/PlayFabEvents.cs" />
+    <Compile Include="Assets/PlayFabSDK/Authentication/PlayFabAuthenticationAPI.cs" />
+    <Compile Include="Assets/PlayFabSDK/Shared/Public/ITransportPlugin.cs" />
+    <Compile Include="Assets/PlayFabSDK/Groups/PlayFabGroupsModels.cs" />
+    <Compile Include="Assets/PlayFabSDK/Progression/PlayFabEvents.cs" />
+    <Compile Include="Assets/PlayFabSDK/Shared/Public/IPlayFabPlugin.cs" />
+    <Compile Include="Assets/PlayFabSDK/Profiles/PlayFabProfilesAPI.cs" />
+    <Compile Include="Assets/PlayFabSDK/Shared/Public/PlayFabApiSettings.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader" />
-    <None Include="Assets/TextMesh Pro/Examples &amp; Extras/Fonts/Oswald-Bold - OFL.txt" />
-    <None Include="Assets/TextMesh Pro/Examples &amp; Extras/Fonts/Anton OFL.txt" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMPro_Mobile.cginc" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF SSD.shader" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Surface.shader" />
-    <None Include="Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF.shader" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader" />
-    <None Include="Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMPro_Properties.cginc" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc" />
-    <None Include="Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader" />
-    <None Include="Assets/TextMesh Pro/Fonts/LiberationSans - OFL.txt" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_Sprite.shader" />
-    <None Include="Assets/TextMesh Pro/Examples &amp; Extras/Fonts/Bangers - OFL.txt" />
+    <None Include="Assets/PlayFabSDK/link.xml" />
+    <None Include="Assets/PlayFabSDK/PlayFab.asmdef" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -442,12 +483,92 @@
       <HintPath>/Applications/Unity/Hub/Editor/2022.3.22f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.UnityConnectModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="UnityEditor.Graphs">
+      <HintPath>/Applications/Unity/Hub/Editor/2022.3.22f1/Unity.app/Contents/Managed/UnityEditor.Graphs.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.WebGL.Extensions">
+      <HintPath>/Applications/Unity/Hub/Editor/2022.3.22f1/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.OSXStandalone.Extensions">
+      <HintPath>/Applications/Unity/Hub/Editor/2022.3.22f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.Android.Extensions">
+      <HintPath>/Applications/Unity/Hub/Editor/2022.3.22f1/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions">
+      <HintPath>/Applications/Unity/Hub/Editor/2022.3.22f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.WindowsStandalone.Extensions">
+      <HintPath>/Applications/Unity/Hub/Editor/2022.3.22f1/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.LinuxStandalone.Extensions">
+      <HintPath>/Applications/Unity/Hub/Editor/2022.3.22f1/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.YamlDotNet">
+      <HintPath>Library/PackageCache/com.unity.visualscripting@1.9.2/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="ReportGeneratorMerged">
       <HintPath>Library/PackageCache/com.unity.testtools.codecoverage@1.2.5/lib/ReportGenerator/ReportGeneratorMerged.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="unityplastic">
+      <HintPath>Library/PackageCache/com.unity.collab-proxy@2.5.2/Lib/Editor/PlasticSCM/unityplastic.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Plastic.Antlr3.Runtime">
+      <HintPath>Library/PackageCache/com.unity.collab-proxy@2.5.2/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Plastic.Newtonsoft.Json">
+      <HintPath>Library/PackageCache/com.unity.collab-proxy@2.5.2/Lib/Editor/PlasticSCM/Unity.Plastic.Newtonsoft.Json.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="log4netPlastic">
+      <HintPath>Library/PackageCache/com.unity.collab-proxy@2.5.2/Lib/Editor/PlasticSCM/log4netPlastic.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.IonicZip">
+      <HintPath>Library/PackageCache/com.unity.visualscripting@1.9.2/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
       <HintPath>Library/PackageCache/com.unity.visualscripting@1.9.2/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.TextureAssets">
+      <HintPath>Library/PackageCache/com.unity.visualscripting@1.9.2/Editor/VisualScripting.Core/EditorAssetResources/Unity.VisualScripting.TextureAssets.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.JsonWebTokens">
+      <HintPath>Assets/PlayFabEditorExtensions/Editor/Resources/Microsoft.IdentityModel.JsonWebTokens.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Tokens">
+      <HintPath>Assets/PlayFabEditorExtensions/Editor/Resources/Microsoft.IdentityModel.Tokens.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Logging">
+      <HintPath>Assets/PlayFabEditorExtensions/Editor/Resources/Microsoft.IdentityModel.Logging.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Identity.Client">
+      <HintPath>Assets/PlayFabEditorExtensions/Editor/Resources/Microsoft.Identity.Client.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Clients.ActiveDirectory">
+      <HintPath>Assets/PlayFabEditorExtensions/Editor/Resources/Microsoft.IdentityModel.Clients.ActiveDirectory.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.IdentityModel.Tokens.Jwt">
+      <HintPath>Assets/PlayFabEditorExtensions/Editor/Resources/System.IdentityModel.Tokens.Jwt.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
@@ -962,104 +1083,16 @@
       <HintPath>/Applications/Unity/Hub/Editor/2022.3.22f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netfx/mscorlib.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.Timeline">
-      <HintPath>Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection">
-      <HintPath>Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll</HintPath>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.EditorCoroutines.Editor">
-      <HintPath>Library/ScriptAssemblies/Unity.EditorCoroutines.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
-      <HintPath>Library/ScriptAssemblies/Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.Performance.Profile-Analyzer.Editor">
-      <HintPath>Library/ScriptAssemblies/Unity.Performance.Profile-Analyzer.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.TestTools.CodeCoverage.Editor">
-      <HintPath>Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Model">
-      <HintPath>Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.PlasticSCM.Editor">
-      <HintPath>Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.State.Editor">
-      <HintPath>Library/ScriptAssemblies/Unity.VisualScripting.State.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.Timeline.Editor">
-      <HintPath>Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.Shared.Editor">
-      <HintPath>Library/ScriptAssemblies/Unity.VisualScripting.Shared.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.VisualStudio.Editor">
-      <HintPath>Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro">
-      <HintPath>Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.Core">
-      <HintPath>Library/ScriptAssemblies/Unity.VisualScripting.Core.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="UnityEditor.UI">
-      <HintPath>Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.Core.Editor">
-      <HintPath>Library/ScriptAssemblies/Unity.VisualScripting.Core.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.Rider.Editor">
-      <HintPath>Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.State">
-      <HintPath>Library/ScriptAssemblies/Unity.VisualScripting.State.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.VSCode.Editor">
-      <HintPath>Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.Flow">
-      <HintPath>Library/ScriptAssemblies/Unity.VisualScripting.Flow.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.Flow.Editor">
-      <HintPath>Library/ScriptAssemblies/Unity.VisualScripting.Flow.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="PlayFabEditorExtensions.csproj">
-      <Project>{A0E0A7C9-2CA0-8918-D25E-1019EAD9AC42}</Project>
-      <Name>PlayFabEditorExtensions</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)/Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
