@@ -60,6 +60,7 @@
     <Analyzer Include="/Applications/Unity/Hub/Editor/2022.3.22f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets/Scripts/PlayFabScritps/PlayFabRegisterManager.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextEventHandler.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexShakeA.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_ExampleScript_01.cs" />
@@ -93,6 +94,7 @@
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/ShaderPropAnimator.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/CameraController.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark03.cs" />
+    <Compile Include="Assets/Scripts/CanvasManager.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextInfoDebugTool.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -1056,6 +1058,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="PlayFab.csproj">
+      <Project>{23F4B7B2-035F-D79B-17EF-F1F331A44474}</Project>
+      <Name>PlayFab</Name>
+    </ProjectReference>
+    <ProjectReference Include="PlayFabSDKEditor.csproj">
+      <Project>{B482FD73-17D1-F86A-FD73-E6E64BE658D3}</Project>
+      <Name>PlayFabSDKEditor</Name>
+    </ProjectReference>
     <ProjectReference Include="PlayFabEditorExtensions.csproj">
       <Project>{A0E0A7C9-2CA0-8918-D25E-1019EAD9AC42}</Project>
       <Name>PlayFabEditorExtensions</Name>

@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayFab", "PlayFab.csproj", "{23F4B7B2-035F-D79B-17EF-F1F331A44474}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayFabEditorExtensions", "PlayFabEditorExtensions.csproj", "{A0E0A7C9-2CA0-8918-D25E-1019EAD9AC42}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{23CF5628-CB8E-E873-16BB-46AA2901A3D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayFabEditorExtensions", "PlayFabEditorExtensions.csproj", "{A0E0A7C9-2CA0-8918-D25E-1019EAD9AC42}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayFabSDKEditor", "PlayFabSDKEditor.csproj", "{B482FD73-17D1-F86A-FD73-E6E64BE658D3}"
 EndProject
@@ -19,14 +19,14 @@ Global
 		{23F4B7B2-035F-D79B-17EF-F1F331A44474}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{23F4B7B2-035F-D79B-17EF-F1F331A44474}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{23F4B7B2-035F-D79B-17EF-F1F331A44474}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A0E0A7C9-2CA0-8918-D25E-1019EAD9AC42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A0E0A7C9-2CA0-8918-D25E-1019EAD9AC42}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A0E0A7C9-2CA0-8918-D25E-1019EAD9AC42}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A0E0A7C9-2CA0-8918-D25E-1019EAD9AC42}.Release|Any CPU.Build.0 = Release|Any CPU
 		{23CF5628-CB8E-E873-16BB-46AA2901A3D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{23CF5628-CB8E-E873-16BB-46AA2901A3D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{23CF5628-CB8E-E873-16BB-46AA2901A3D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{23CF5628-CB8E-E873-16BB-46AA2901A3D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0E0A7C9-2CA0-8918-D25E-1019EAD9AC42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0E0A7C9-2CA0-8918-D25E-1019EAD9AC42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0E0A7C9-2CA0-8918-D25E-1019EAD9AC42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0E0A7C9-2CA0-8918-D25E-1019EAD9AC42}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B482FD73-17D1-F86A-FD73-E6E64BE658D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B482FD73-17D1-F86A-FD73-E6E64BE658D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B482FD73-17D1-F86A-FD73-E6E64BE658D3}.Release|Any CPU.ActiveCfg = Release|Any CPU

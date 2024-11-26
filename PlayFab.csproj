@@ -75,8 +75,8 @@
     <Compile Include="Assets/PlayFabSDK/Insights/PlayFabInsightsInstanceAPI.cs" />
     <Compile Include="Assets/PlayFabSDK/Server/PlayFabEvents.cs" />
     <Compile Include="Assets/PlayFabSDK/Insights/PlayFabInsightsModels.cs" />
-    <Compile Include="Assets/PlayFabSDK/Shared/Internal/PlayFabErrors.cs" />
     <Compile Include="Assets/PlayFabSDK/Economy/PlayFabEvents.cs" />
+    <Compile Include="Assets/PlayFabSDK/Shared/Internal/PlayFabErrors.cs" />
     <Compile Include="Assets/PlayFabSDK/Shared/Public/PluginContractKey.cs" />
     <Compile Include="Assets/PlayFabSDK/Shared/Internal/Log.cs" />
     <Compile Include="Assets/PlayFabSDK/Client/PlayFabEvents.cs" />
@@ -104,8 +104,8 @@
     <Compile Include="Assets/PlayFabSDK/Shared/Models/PlayFabSharedSettings.cs" />
     <Compile Include="Assets/PlayFabSDK/Admin/PlayFabAdminModels.cs" />
     <Compile Include="Assets/PlayFabSDK/Experimentation/PlayFabEvents.cs" />
-    <Compile Include="Assets/PlayFabSDK/Shared/Public/PlayFabAuthenticationContext.cs" />
     <Compile Include="Assets/PlayFabSDK/Shared/Internal/SimpleJson.cs" />
+    <Compile Include="Assets/PlayFabSDK/Shared/Public/PlayFabAuthenticationContext.cs" />
     <Compile Include="Assets/PlayFabSDK/Shared/Public/PlayFabDataGatherer.cs" />
     <Compile Include="Assets/PlayFabSDK/Groups/PlayFabGroupsAPI.cs" />
     <Compile Include="Assets/PlayFabSDK/CloudScript/PlayFabCloudScriptAPI.cs" />
@@ -515,6 +515,18 @@
       <HintPath>Library/PackageCache/com.unity.visualscripting@1.9.2/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="System.IdentityModel.Tokens.Jwt">
+      <HintPath>Assets/PlayFabEditorExtensions/Editor/Resources/System.IdentityModel.Tokens.Jwt.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Clients.ActiveDirectory">
+      <HintPath>Assets/PlayFabEditorExtensions/Editor/Resources/Microsoft.IdentityModel.Clients.ActiveDirectory.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Identity.Client">
+      <HintPath>Assets/PlayFabEditorExtensions/Editor/Resources/Microsoft.Identity.Client.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="ReportGeneratorMerged">
       <HintPath>Library/PackageCache/com.unity.testtools.codecoverage@1.2.5/lib/ReportGenerator/ReportGeneratorMerged.dll</HintPath>
       <Private>False</Private>
@@ -543,6 +555,10 @@
       <HintPath>Library/PackageCache/com.unity.visualscripting@1.9.2/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Microsoft.IdentityModel.Tokens">
+      <HintPath>Assets/PlayFabEditorExtensions/Editor/Resources/Microsoft.IdentityModel.Tokens.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.VisualScripting.TextureAssets">
       <HintPath>Library/PackageCache/com.unity.visualscripting@1.9.2/Editor/VisualScripting.Core/EditorAssetResources/Unity.VisualScripting.TextureAssets.dll</HintPath>
       <Private>False</Private>
@@ -551,24 +567,8 @@
       <HintPath>Assets/PlayFabEditorExtensions/Editor/Resources/Microsoft.IdentityModel.JsonWebTokens.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Microsoft.IdentityModel.Tokens">
-      <HintPath>Assets/PlayFabEditorExtensions/Editor/Resources/Microsoft.IdentityModel.Tokens.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Microsoft.IdentityModel.Logging">
       <HintPath>Assets/PlayFabEditorExtensions/Editor/Resources/Microsoft.IdentityModel.Logging.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Microsoft.Identity.Client">
-      <HintPath>Assets/PlayFabEditorExtensions/Editor/Resources/Microsoft.Identity.Client.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Microsoft.IdentityModel.Clients.ActiveDirectory">
-      <HintPath>Assets/PlayFabEditorExtensions/Editor/Resources/Microsoft.IdentityModel.Clients.ActiveDirectory.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="System.IdentityModel.Tokens.Jwt">
-      <HintPath>Assets/PlayFabEditorExtensions/Editor/Resources/System.IdentityModel.Tokens.Jwt.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
