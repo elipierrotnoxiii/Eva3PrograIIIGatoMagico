@@ -16,6 +16,14 @@ public class PlayFabRegisterManager : MonoBehaviour
     [Header("Feedback")]
     public TMP_Text feedbackText;
 
+    private CanvasManager canvasManager;
+
+    private void Start()
+    {
+        canvasManager = FindObjectOfType<CanvasManager>();
+    }
+
+
     public void RegisterUser()
     {
         string username = inputUserName.text;
@@ -66,6 +74,8 @@ public class PlayFabRegisterManager : MonoBehaviour
     {
         ShowFeedback("!Registro exitoso! Bienvenido, " + result.Username);
         Debug.Log("Userio registrado correctamente: " + result.Username);
+
+        canvasManager.ShowPanel("Login");
     }
 
     private void OnRegisterFailure(PlayFabError error)

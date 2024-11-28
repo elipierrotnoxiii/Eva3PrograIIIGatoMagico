@@ -1,13 +1,14 @@
 ﻿<Properties StartupConfiguration="{23CF5628-CB8E-E873-16BB-46AA2901A3D7}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayFabScritps/PlayFabRegisterManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayFabScritps/PlayFabLoginManager.cs">
     <Files>
       <File FileName="Assets/Scripts/CanvasManager.cs" Line="9" Column="26" />
       <File FileName="Assets/Scripts/PlayFabScritps/PlayFabRegisterManager.cs" Line="11" Column="40" />
+      <File FileName="Assets/Scripts/PlayFabScritps/PlayFabLoginManager.cs" Line="7" Column="5" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="ec7a0b9d-44d1-405b-8105-90742660e778" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="59f03bc8-8fbc-4f28-bbc2-a5f0c8910f9d" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
