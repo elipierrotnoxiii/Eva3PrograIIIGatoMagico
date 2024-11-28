@@ -14,6 +14,13 @@ public class PlayFabLoginManager : MonoBehaviour
     [Header("Feedback (TextMeshPro)")]
     public TMP_Text feedbackText;
 
+    private CanvasManager canvasManager;
+
+    private void Start()
+    {
+        canvasManager = canvasManager = FindObjectOfType<CanvasManager>();
+    }
+
     public void LoginUser()
     {
         string email = inputEmail.text.Trim();
@@ -45,7 +52,11 @@ public class PlayFabLoginManager : MonoBehaviour
     {
         ShowFeedback("¡Inicio de sesión exitoso! Bienvenido de nuevo.");
         Debug.Log("Usuario logeado correctamente: " + result.PlayFabId);
-        // Aquí puedes redirigir al usuario a otro panel o al menú principal
+
+        Debug.Log(result.PlayFabId);
+
+        canvasManager.ShowPanel("MainMenu");
+
     }
 
     private void OnLoginFailure(PlayFabError error)

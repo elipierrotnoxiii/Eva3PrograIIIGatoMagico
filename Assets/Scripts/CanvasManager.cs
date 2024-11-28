@@ -7,6 +7,8 @@ public class CanvasManager : MonoBehaviour
     [Header("Canva's Panels")]
     public GameObject panelLogin;
     public GameObject panelRegister;
+    public GameObject panelMainMenu;
+
 
     private void Start()
     {
@@ -27,6 +29,9 @@ public class CanvasManager : MonoBehaviour
                 break;
             case "Register":
                 panelRegister.SetActive(true);
+                break;
+            case "MainMenu":
+                panelMainMenu.SetActive(true);
                 break;
             default:
                 Debug.LogWarning("El panel solicitado no existe: " + panelName);
