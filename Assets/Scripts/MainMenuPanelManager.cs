@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MainMenuPanelManager : MonoBehaviour
 {
@@ -42,5 +43,10 @@ public class MainMenuPanelManager : MonoBehaviour
                 Debug.LogWarning("El panel solicitado no existe: " + panelName);
                 break;
         }
+    }
+
+    public void StartGame()
+    {
+        SceneManager.LoadScene("RaspeGenerator");
     }
 }

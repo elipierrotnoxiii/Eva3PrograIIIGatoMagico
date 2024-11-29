@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: PlayFabEditorPrefsSO
   m_EditorClassIdentifier: 
   DevAccountEmail: jorge.rodriguez.r@zonavirtual.uisek.cl
-  DevAccountToken: 13n7c9trekqr37a7zk1f5u46738wwo65sebwqcpxezk84s9src6dap877kej3cfc81eojpakmtifb3fbzt7sry95un8aazsn1ow1jn833b14h3maawoatehtc7bmzkobngsre6sz5faa4e17mgda9shagad5nuu61rwmtdgi9dhuiyrbhzudbf1o3imcsm5oajeq8nu3
+  DevAccountToken: giqisjiwt8n7jp111wegk6hemxznpetj6eyn9tz5pe8zhsbxyetg1ctxyqkrd3ai18poqs86pbfij94mjbmbx7ht9dmjcoq3prb8iy7mtf8op67irti14ke4ctqcbseo3wk1aawfbjhacnmf3h98yg3fqtxpxnmnmoif4zfkc8xmwtqkhfy4r95huiwuq6ck4pm7xyap
   AadAuthorization: 
   SelectedStudio: GatoMagico
   SdkPath: Assets/PlayFabSDK

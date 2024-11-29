@@ -91,7 +91,7 @@ public class PlayFabRegisterManager : MonoBehaviour
             feedbackText.gameObject.SetActive(true);
             feedbackText.text = message;
 
-            StartCoroutine(HideFeedbackAfterDelay(3f));
+            StartCoroutine(HideFeedbackAfterDelay(2f));
         }
     }
 

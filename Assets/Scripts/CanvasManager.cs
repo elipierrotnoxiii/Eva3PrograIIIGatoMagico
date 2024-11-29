@@ -8,6 +8,7 @@ public class CanvasManager : MonoBehaviour
     public GameObject panelLogin;
     public GameObject panelRegister;
     public GameObject panelMainMenu;
+    public GameObject PanelRecoveryAccount;
 
 
     private void Start()
@@ -32,6 +33,9 @@ public class CanvasManager : MonoBehaviour
                 break;
             case "MainMenu":
                 panelMainMenu.SetActive(true);
+                break;
+            case "RecoveryAccount":
+                PanelRecoveryAccount.SetActive(true);
                 break;
             default:
                 Debug.LogWarning("El panel solicitado no existe: " + panelName);

@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/RaspeGenerator.unity
+    guid: 6b15f54cc16de25488f183ec4d2a170f
   m_configObjects: {}
