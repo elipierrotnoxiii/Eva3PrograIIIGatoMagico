@@ -569,23 +569,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9034444036031216381, guid: 162edc5ecd1c546da85c41efd44b7cb7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9034444036031216381, guid: 162edc5ecd1c546da85c41efd44b7cb7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 158004249}
+      objectReference: {fileID: 1716520231}
     - target: {fileID: 9034444036031216381, guid: 162edc5ecd1c546da85c41efd44b7cb7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 9034444036031216381, guid: 162edc5ecd1c546da85c41efd44b7cb7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ShowPanel
+      value: RecoverAccount
       objectReference: {fileID: 0}
     - target: {fileID: 9034444036031216381, guid: 162edc5ecd1c546da85c41efd44b7cb7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: CanvasManager, Assembly-CSharp
+      value: AccountRecovery, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 9034444036031216381, guid: 162edc5ecd1c546da85c41efd44b7cb7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
@@ -771,7 +771,7 @@ MonoBehaviour:
   panelLogin: {fileID: 738591810}
   panelRegister: {fileID: 1581102429}
   panelMainMenu: {fileID: 1454756599}
-  PanelRecoveryAccount: {fileID: 0}
+  PanelRecoveryAccount: {fileID: 1104665549}
 --- !u!4 &158004250
 Transform:
   m_ObjectHideFlags: 0
@@ -5392,8 +5392,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 980ccf7a12bb743b793d158a8ff0bfd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  emailInputField: {fileID: 1147685926}
-  statusText: {fileID: 1616956706}
+  inputEmail: {fileID: 1147685926}
+  feedbackText: {fileID: 1616956706}
 --- !u!4 &1716520232
 Transform:
   m_ObjectHideFlags: 0
@@ -6855,7 +6855,9 @@ PrefabInstance:
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 8968035080468649520, guid: 8a342ee3b76ff4e3982fd51221d2853a, type: 3}
+    - {fileID: 2446787338324557874, guid: 8a342ee3b76ff4e3982fd51221d2853a, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 4239950235899137861, guid: 8a342ee3b76ff4e3982fd51221d2853a, type: 3}
       insertIndex: 0
